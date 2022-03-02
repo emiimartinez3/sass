@@ -1,16 +1,48 @@
-header {
+/* $mapcolores:(1:#f5f5f5, 2:#663c4c, 3:#ffffff, 4:#d39892, 5:#664c4f, 6:#997479);
+
+*/
+.espacios1 {
+  background-color: red;
+  color: green;
+  margin-right: 20px;
   width: 100%;
-  height: 80px;
-  background: whitesmoke;
+  height: 500px;
 }
 
-header nav {
-  background: whitesmoke;
-  height: 80;
+.espacios2 {
+  background-color: white;
+  color: black;
+  margin-right: 20px;
+  width: 100%;
+  height: 500px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #f5f5f5;
+}
+
+body .header {
+  width: 100%;
+  height: 80px;
+  background: #f5f5f5;
+}
+
+body .header .nav {
+  background: #f5f5f5;
+  height: 80px;
   color: #663c4c;
 }
 
-header nav div {
+body .header .nav .nav__container {
   display: flex;
   height: 100%;
   width: 100%;
@@ -19,13 +51,22 @@ header nav div {
   align-items: center;
 }
 
-header nav div h1 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 30px;
+body .header .nav .nav__container .nav__logo {
+  font-size: 33px;
   font-weight: 900;
+  font-family: "Dancing Script", cursive;
+  margin-left: 30px;
 }
 
-header nav div ul {
+body .header .nav .nav__container .nav__label {
+  font-size: 35px;
+}
+
+body .header .nav .nav__container .nav__labelnav__input {
+  display: none;
+}
+
+body .header .nav .nav__container .nav__menu {
   margin-top: 15px;
   margin-right: 30px;
   display: grid;
@@ -33,14 +74,14 @@ header nav div ul {
   gap: 20px;
 }
 
-header nav div ul li a {
+body .header .nav .nav__container .nav__menu .nav__item {
   color: #663c4c;
   text-decoration: none;
   --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
   font-size: 18px;
 }
 
-header nav div ul li a::after {
+body .header .nav .nav__container .nav__menu .nav__item::after {
   content: "";
   display: block;
   background: #663c4c;
@@ -51,16 +92,30 @@ header nav div ul li a::after {
   transition: .2s ease;
 }
 
-.row .contenido {
+body .header .nav .nav__container .nav__menu .nav__item:hover {
+  --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  color: #663c4c;
+}
+
+body .eem {
+  height: 700px;
+  width: 100%;
+}
+
+body .eem .contenido {
   display: grid;
   grid-template-areas: "consulta" "texto";
+  row-gap: 25px;
+  margin-top: 80px;
 }
 
-.row .contenido .consulta {
-  border-bottom: 1.5px #663c4c;
+body .eem .contenido .consulta {
+  color: #663c4c;
+  opacity: .6;
+  text-align: center;
 }
 
-.row .contenido .texto {
+body .eem .contenido .texto {
   color: #663c4c;
   opacity: .6;
   width: 40%;
@@ -71,35 +126,201 @@ header nav div ul li a::after {
   margin-bottom: 100px;
 }
 
-.row form {
+body .eem .formulario {
   display: grid;
   grid-template-areas: "nombre apellido" "email numero " "mensaje mensaje" "boton boton";
   grid-template-columns: auto auto;
   grid-template-rows: auto auto auto auto;
   column-gap: 50px;
+  row-gap: 25px;
   width: 1000px;
-  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
   opacity: .6;
 }
 
-.row form div {
+body .eem .formulario .nombre {
+  grid-area: nombre;
   width: 100%;
 }
 
-.row form div input,
-.row form div textarea {
+body .eem .formulario .nombreinput,
+body .eem .formulario .nombre textarea {
   border: none;
   resize: none;
   outline: none;
   width: 100%;
   transform: all .3s;
   border-bottom: 1.5px solid #663c4c;
-  background-color: whitesmoke;
+  background-color: #f5f5f5;
 }
 
-.row form div inputinput:focus,
-.row form div input textarea:focus,
-.row form div textareainput:focus,
-.row form div textarea textarea:focus {
-  border-bottom-color: goldenrod;
+body .eem .formulario .apellido {
+  grid-area: apellido;
+  width: 100%;
+}
+
+body .eem .formulario .apellidoinput,
+body .eem .formulario .apellido textarea {
+  border: none;
+  resize: none;
+  outline: none;
+  width: 100%;
+  transform: all .3s;
+  border-bottom: 1.5px solid #663c4c;
+  background-color: #f5f5f5;
+}
+
+body .eem .formulario .email {
+  grid-area: email;
+  width: 100%;
+}
+
+body .eem .formulario .emailinput,
+body .eem .formulario .email textarea {
+  border: none;
+  resize: none;
+  outline: none;
+  width: 100%;
+  transform: all .3s;
+  border-bottom: 1.5px solid #663c4c;
+  background-color: #f5f5f5;
+}
+
+body .eem .formulario .numero {
+  grid-area: numero;
+  width: 100%;
+}
+
+body .eem .formulario .numeroinput,
+body .eem .formulario .numero textarea {
+  border: none;
+  resize: none;
+  outline: none;
+  width: 100%;
+  transform: all .3s;
+  border-bottom: 1.5px solid #663c4c;
+  background-color: #f5f5f5;
+}
+
+body .eem .formulario .mensaje {
+  grid-area: mensaje;
+  width: 100%;
+}
+
+body .eem .formulario .mensajeinput,
+body .eem .formulario .mensaje textarea {
+  border: none;
+  resize: none;
+  outline: none;
+  width: 100%;
+  transform: all .3s;
+  border-bottom: 1.5px solid #663c4c;
+  background-color: #f5f5f5;
+}
+
+body .eem .formulario .boton {
+  grid-area: boton;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  outline: none;
+  background: #663c4c;
+  border-radius: 5px;
+  width: 200px;
+  height: 38px;
+  color: #f5f5f5;
+}
+
+body .eem .formulario input:focus,
+body .eem .formulario textarea:focus {
+  border-bottom-color: #d39892;
+}
+
+body .footer {
+  position: relative;
+  background: #664c4f;
+  width: 100%;
+  padding-top: 30px;
+  color: #ffffff;
+}
+
+body .footer .titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  list-style: none;
+}
+
+body .footer .titulo h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: "Dancing Script", cursive;
+  line-height: 3rem;
+  list-style: none;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+body .footer .titulo p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 17px;
+  list-style: none;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+}
+
+body .footer .titulo .red-social {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem 0 .7rem 0;
+}
+
+body .footer .titulo .red-social ul {
+  margin: 10px 0 10px 0;
+}
+
+body .footer .titulo .red-social ul li {
+  margin: 0 10px;
+}
+
+body .footer .titulo .red-social ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+body .footer .titulo .red-social ul li a i {
+  font-size: 2.2rem;
+  transition: color .4 ease;
+  margin-right: 50px;
+}
+
+body .footer .titulo .red-social ul li a:hover i {
+  color: #997479;
+}
+
+body .footer .copy {
+  background: #664c4f;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+body .footer .copy p {
+  font-size: 14px;
+  word-spacing: 2px;
+  font-family: "Montserrat", sans-serif;
+}
+
+body .footer .copy p span {
+  opacity: .4;
+  font-weight: 200;
 }

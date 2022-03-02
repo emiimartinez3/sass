@@ -232,7 +232,8 @@ margin: 10px 0 10px 0;
 }
 
 .eem{
-    height: 600px;
+    height: 700px;
+    width: 100%;
 }
 
 .contenido{
@@ -240,13 +241,14 @@ margin: 10px 0 10px 0;
     grid-template-areas:
     "consulta"
     "texto";
+    row-gap: 25px;
+    margin-top: 80px;
 }
- .consulta{
+
+.consulta{
     color: #663c4c;
     opacity: .6;
     text-align: center;
-    margin-top: 100px;
-    margin-bottom: 50px;
 }
 
 .texto{
@@ -270,8 +272,10 @@ margin: 10px 0 10px 0;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto auto;
     column-gap: 50px;
+    row-gap: 25px;
     width: 1000px;
-    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
     opacity: .6;
 }
 
@@ -358,11 +362,11 @@ margin: 10px 0 10px 0;
     background-color: whitesmoke;
 }
 
-
 .boton{
     grid-area: boton;
     align-content: center;
-
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .boton {
@@ -376,7 +380,7 @@ margin: 10px 0 10px 0;
 }
 
 input:focus,
-textarea:focus {
+textarea:focus{
     border-bottom-color: #d39892;
 }
 
@@ -391,7 +395,6 @@ textarea:focus {
 .card-img-top{
     height: 381.33px;
 }
-
 
 
 /* NOSOTROS */
@@ -416,3 +419,131 @@ textarea:focus {
     opacity: .6;
     align-content: center;
 }
+
+/* FIN DE NOSOTROS */
+
+/* REGISTRO */
+
+.cuadro{
+    height: 400px;
+    width: 100%;
+}
+
+.registro{
+    display: grid;
+    grid-template-areas:
+    "nombre numero"
+    "email code"
+    "botonn cuenta";
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    column-gap: 50px;
+    row-gap: 50px;
+    width: 1000px;
+    margin-top: 70px;
+    opacity: .6;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+}
+
+.code{
+    grid-area: code;
+    width: 100%;
+}
+
+.code input, textarea{
+    border: none;
+    resize: none;
+    outline: none;
+    width: 100%;
+    transform: all .3s;
+    border-bottom: 1.5px solid #663c4c;
+    background-color: whitesmoke;
+}
+
+.botonn{
+    grid-area: botonn;
+    width: 100%;
+}
+
+.botonn{
+    border: none;
+    outline: none;
+    background: #663c4c;
+    border-radius: 5px;
+    width: 200px;
+    height: 38px;
+    color: whitesmoke;
+}
+
+.cuenta{
+    grid-area: cuenta;
+    width: 100%;
+}
+
+.cuenta{
+    color: #663c4c;
+}
+
+.cuenta a{
+    color: #a06586;
+}
+
+.bienvenido{
+    color: #663c4c;
+    text-align: center;
+    justify-content: center;
+    opacity: .6;
+    margin-top: 70px;
+}
+
+/* INIC DEL REGISTRO */
+
+.inic{
+    height: 500px;
+    width: 100%;
+}
+
+.iniciar__sesion{
+    color: #663c4c;
+    opacity: .6;
+    justify-content: center;
+    text-align: center;
+    margin: 55px 0px;
+}
+
+.iniciar{
+    display: grid;
+    grid-template-areas: 
+    "email"
+    "code"
+    "botonn"
+    "inicc";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    margin-right: auto;
+    margin-left: auto;
+    width: 500px;
+    height: 390px;
+    opacity: .6;
+}
+
+.botonn{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inicc{
+    color: #663c4c;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+.inicc a{
+    color: #663c4c;
+}
+
+
+/* FIN DEL REGISTRO */
