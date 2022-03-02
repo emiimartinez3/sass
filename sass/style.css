@@ -1,6 +1,10 @@
 /* $mapcolores:(1:#f5f5f5, 2:#663c4c, 3:#ffffff, 4:#d39892, 5:#664c4f, 6:#997479);
 
 */
+.claseDePrueba {
+  background-position: 0%;
+}
+
 .espacios1 {
   background-color: red;
   color: green;
