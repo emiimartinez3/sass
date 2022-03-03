@@ -36,6 +36,7 @@ body{
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
+    opacity: .8;
 }
 
 .nav__label, .nav__input{
@@ -70,6 +71,7 @@ body{
     height: 2px;
     clip-path: var(--clippy);
     transition: .2s ease;
+    opacity: .8;
 }
 
 .nav__item:hover{
@@ -384,7 +386,7 @@ textarea:focus{
     border-bottom-color: #d39892;
 }
 
-/* FIN DEL CONTACTO */
+ FIN DEL CONTACTO */
 
 .card-body{
     height: 80px;
@@ -411,12 +413,13 @@ textarea:focus{
     text-align: center;
     color: #663c4c;
     opacity: .7;
+    margin-top: 70px;
 }
 
-.lorem{
+.descripcion{
     text-align: center;
     color: #663c4c;
-    opacity: .6;
+    opacity: .7;
     align-content: center;
 }
 
@@ -425,7 +428,7 @@ textarea:focus{
 /* REGISTRO */
 
 .cuadro{
-    height: 400px;
+    height: 500px;
     width: 100%;
 }
 
@@ -434,7 +437,8 @@ textarea:focus{
     grid-template-areas:
     "nombre numero"
     "email code"
-    "botonn cuenta";
+    "botonn botonn"
+    "cuenta cuenta";
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto auto;
     column-gap: 50px;
@@ -480,6 +484,7 @@ textarea:focus{
 .cuenta{
     grid-area: cuenta;
     width: 100%;
+    margin-left: 350px;
 }
 
 .cuenta{

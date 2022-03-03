@@ -1,26 +1,10 @@
-/* $mapcolores:(1:#f5f5f5, 2:#663c4c, 3:#ffffff, 4:#d39892, 5:#664c4f, 6:#997479);
-
-*/
-.claseDePrueba {
-  background-position: 0%;
-}
-
-.espacios1 {
-  background-color: red;
-  color: green;
-  margin-right: 20px;
-  width: 100%;
-  height: 500px;
-}
-
-.espacios2 {
-  background-color: white;
-  color: black;
-  margin-right: 20px;
-  width: 100%;
-  height: 500px;
-}
-
+/*@mixin espacios ($color, $color1) {
+    background-color: $color;
+    color: $color1;
+    margin-right: 20px;
+    width: 100%;
+    height: 500px;
+}*/
 * {
   margin: 0;
   padding: 0;
@@ -30,7 +14,6 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
   background: #f5f5f5;
 }
 
@@ -110,7 +93,7 @@ body .eem .contenido {
   display: grid;
   grid-template-areas: "consulta" "texto";
   row-gap: 25px;
-  margin-top: 80px;
+  margin-top: 70px;
 }
 
 body .eem .contenido .consulta {
@@ -244,7 +227,7 @@ body .eem .formulario textarea:focus {
 
 body .footer {
   position: relative;
-  background: #664c4f;
+  background: #d39892;
   width: 100%;
   padding-top: 30px;
   color: #ffffff;
@@ -269,7 +252,7 @@ body .footer .titulo h3 {
   color: #ffffff;
 }
 
-body .footer .titulo p {
+body .footer .titulo .pp, body .footer .titulo .copy .pp2, body .footer .copy .titulo .pp2 {
   max-width: 500px;
   margin: 10px auto;
   line-height: 28px;
@@ -312,19 +295,20 @@ body .footer .titulo .red-social ul li a:hover i {
 }
 
 body .footer .copy {
-  background: #664c4f;
+  background: #d39892;
   width: 100%;
   padding: 20px 0;
   text-align: center;
 }
 
-body .footer .copy p {
-  font-size: 14px;
-  word-spacing: 2px;
-  font-family: "Montserrat", sans-serif;
+body .footer .copy .pp2 {
+  /*font-size: 14px;
+                word-spacing: 2px;
+                font-family: $letraBody;*/
+  color: aqua;
 }
 
-body .footer .copy p span {
+body .footer .copy .pp2 span {
   opacity: .4;
   font-weight: 200;
 }
