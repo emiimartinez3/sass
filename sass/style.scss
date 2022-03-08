@@ -258,7 +258,7 @@ body {
 
     .footer {
         position: relative;
-        background: map-get($map: $mapColores, $key: 4);
+        background: map-get($map: $mapColores, $key: 5 );
         width: 100%;
         padding-top: 30px;
         color: $colorFoot;
@@ -325,7 +325,7 @@ body {
         }
 
         .copy {
-            background: map-get($map: $mapColores, $key: 4 );
+            background: map-get($map: $mapColores, $key: 5 );
             width: 100%;
             padding: 20px 0;
             text-align: center;
@@ -335,7 +335,7 @@ body {
                 word-spacing: 2px;
                 font-family: $letraBody;*/
                 @extend.pp;
-                color: aqua;
+                
 
                 span {
                     opacity: .4;

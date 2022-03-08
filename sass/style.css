@@ -227,7 +227,7 @@ body .eem .formulario textarea:focus {
 
 body .footer {
   position: relative;
-  background: #d39892;
+  background: #664c4f;
   width: 100%;
   padding-top: 30px;
   color: #ffffff;
@@ -295,7 +295,7 @@ body .footer .titulo .red-social ul li a:hover i {
 }
 
 body .footer .copy {
-  background: #d39892;
+  background: #664c4f;
   width: 100%;
   padding: 20px 0;
   text-align: center;
@@ -305,7 +305,6 @@ body .footer .copy .pp2 {
   /*font-size: 14px;
                 word-spacing: 2px;
                 font-family: $letraBody;*/
-  color: aqua;
 }
 
 body .footer .copy .pp2 span {
