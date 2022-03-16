@@ -91,7 +91,8 @@ body .eem {
 
 body .eem .contenido {
   display: grid;
-  grid-template-areas: "consulta" "texto";
+  grid-template-areas: "consulta"
+ "texto";
   row-gap: 25px;
   margin-top: 70px;
 }
@@ -115,7 +116,10 @@ body .eem .contenido .texto {
 
 body .eem .formulario {
   display: grid;
-  grid-template-areas: "nombre apellido" "email numero " "mensaje mensaje" "boton boton";
+  grid-template-areas: "nombre apellido"
+ "email numero "
+ "mensaje mensaje"
+ "boton boton";
   grid-template-columns: auto auto;
   grid-template-rows: auto auto auto auto;
   column-gap: 50px;
@@ -310,4 +314,30 @@ body .footer .copy .pp2 {
 body .footer .copy .pp2 span {
   opacity: .4;
   font-weight: 200;
+}
+
+@media (max-width: 730px) {
+  .formulario {
+      display: grid;
+      grid-template-areas:
+          "nombre"
+          "apellido"
+          "email"
+          "numero "
+          "mensaje"
+          "boton";
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
+      column-gap: 50px;
+      row-gap: 25px;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      opacity: .6;
+  }
+
+  .nombre{
+    grid-area: nombre;
+    width: 320px;
+  }
 }
