@@ -11,99 +11,9 @@
 }
 
 body{
-    font-family: 'Montserrat' , sans-serif;;
+    font-family: 'Montserrat' , sans-serif;
+    background-color: whitesmoke;
 }
-
-/*.button{
-    color:#eee;
-  }
-  .button:hover{
-    color: #fff;
-  }
-  .acorh {
-  list-style: none;
-  font-size: 18px;
-  display: flex;
-  }
-  .acorh li {
-  list-style: none;
-  margin-left: 30px;
-  margin-right: 5px;
-  }
-  .acorh li a {
-  display: block;
-  color: #eee;
-  text-decoration: none;
-  box-sizing: border-box;
-  }
-  .acorh li ul {
-  max-height: 0;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
-  transition: .3s all ease-in;
-  }
-  .acorh li li a {
-  color: #000;
-  font-size: 16px;
-  border: 0;
-  box-sizing: border-box;
-  }
-  ul.acorc li li:last-child a {
-  border-bottom: 0;
-  }
-  ul.acorh li:hover ul {
-  max-height: 300px;
-  transition: .3s all ease-in;
-  }
-  .acorh li a:hover {
-  color: #fff;
-  }
-  .navFlex{
-    display: flex;
-    background-color: #37BCED ;
-    justify-content: space-between;
-  }
-  .Centrar{
-      display: grid;
-      place-content: center;
-  }
-    .blink{
-        color:white;
-      padding-top: 10px;
-      white-space: nowrap;
-      border-right: 4px solid;
-      width: 10ch;
-      animation: typing 2s steps(10) ,
-      blink .5s infinite step-end alternate;
-      overflow: hidden;
-    }
-  .banner1{
-      margin-top: 50px;
-      color:white;
-      margin-left: 30%;
-  }
-  @keyframes typing {
-      from {width: 0px;}
-  }
-  @keyframes blink{
-      50%{border-color: transparent;}
-  }
-  .colorLetras {
-    color: red; }
-  .margen {
-    margin-left: 45%;
-    margin-right: 0px; }
-
-.positionR{
-    position: relative;
-    z-index: 1;
-}
-body {
-    font-family: 'Montserrat', sans-serif;
-    background: whitesmoke;
-}*/
 
 /* COMIENZO DEL NAVBAR*/
 
@@ -145,6 +55,7 @@ body {
     grid-auto-flow: column;
     gap: 20px;
     position: center;
+    color: #663c4c;
 }
 
 .nav__item {
@@ -852,53 +763,47 @@ textarea {
 
 @media (max-width: 730px) {
 
-    .nav{
-        width: 360px;
-    }
+/* NAVBAR */
 
-    .nav__label {
-        display: block;
-        cursor: pointer;
-        color: #663c4c;
-    }
+.header{
+    width: 360px;
+    height: 200px;
+}
 
-    
+.nav{
+    width: 360px;
+    height: 200px;
+}
 
-    .nav__menu {
-        position: fixed;
-        top: 60px;
-        bottom: 0;
-        background: #997479;
-        width: 100%;
-        left: 0;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-direction: column;
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-        transition: clip-path .5s ease;
-    }
+.nav__container{
+    width: 360px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
 
-    .nav__input:checked + .nav__menu{
-        background: #997479;
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
+.nav__logo{
+  
+    width: 250px;
+    margin-top: 15px;
+    margin-left: 80px;
+    margin-right: auto;
+}
 
-    }
+.nav__menu{
+   width: 360px;
+   margin: 0px;
+   padding: 0px;
+   display: grid;
+   grid-template-areas: 
+   "nav-uno nav-dos nav-tres"
+   "nav-cuatro nav-cinco";
+   grid-template-columns: auto;
+   grid-template-rows: auto auto;
+   justify-content: space-evenly;
+}
 
-    .nav__item {
-        color: white;
-    }
-
-    .nav__item::after {
-        background: #fff;
-    }
-
-    .nav__item:hover {
-        color: #fff;
-    }*/
-
-    /* FOOTER MEDIA*/
+/* FOOTER MEDIA*/
 
     .footer {
         position: relative;
@@ -915,7 +820,7 @@ textarea {
         width: 360px;
     }
 
-    
+
     .registro {
         display: grid;
         grid-template-areas:
@@ -1082,6 +987,49 @@ textarea {
 
     .carousel-inner{
         height: auto;
+    }
+
+    /* CONTACTO MEDIA */
+
+    .contenido{
+        height: 250px;
+    }
+
+    .texto{
+        width: 340px;
+    }
+
+    .formulario {
+        display: grid;
+        grid-template-areas:
+            "nombre" 
+            "apellido"
+            "email" 
+            "numero "
+            "mensaje"
+            "boton";
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto;
+        column-gap: 50px;
+        row-gap: 25px;
+        width: 360px;
+        margin-left: 5px;
+        margin-right: 5px;
+        opacity: .6;
+    }
+
+    .apellido{
+        grid-area: apellido;
+        width: 350px;
+    }
+    .mensaje{
+        grid-area: mensaje;
+        width: 350px;
+    }
+
+    .newsletter {
+        width: 355px;
+        margin-left: auto;
     }
 
 }

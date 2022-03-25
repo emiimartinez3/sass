@@ -1,10 +1,4 @@
-/*@mixin espacios ($color, $color1) {
-    background-color: $color;
-    color: $color1;
-    margin-right: 20px;
-    width: 100%;
-    height: 500px;
-}*/
+
 * {
   margin: 0;
   padding: 0;
@@ -316,28 +310,3 @@ body .footer .copy .pp2 span {
   font-weight: 200;
 }
 
-@media (max-width: 730px) {
-  .formulario {
-      display: grid;
-      grid-template-areas:
-          "nombre"
-          "apellido"
-          "email"
-          "numero "
-          "mensaje"
-          "boton";
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
-      column-gap: 50px;
-      row-gap: 25px;
-      width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-      opacity: .6;
-  }
-
-  .nombre{
-    grid-area: nombre;
-    width: 320px;
-  }
-}
